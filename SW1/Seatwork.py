@@ -1,5 +1,4 @@
 def convert_currency(dollars):
-    """Return Peso and Yen given dollars."""
     peso = dollars * 57.17
     yen = dollars * 146.67
     return peso, yen
