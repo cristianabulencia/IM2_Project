@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSU Urdaneta Event Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="card p-4 shadow-lg">
+        <h3 class="text-center text-primary mb-4">PSU Urdaneta Event Registration</h3>
+        <form action="/register" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Event</label>
+                <select class="form-select" name="event" required>
+                    <option value="">Select an Event</option>
+                    <option value="University Week 2025">University Week 2025</option>
+                    <option value="IT Student Research Forum">IT Student Research Forum</option>
+                    <option value="Job Fair 2025">Job Fair 2025</option>
+                    <option value="Leadership Seminar">Leadership Seminar</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Lastname</label>
+                <input type="text" class="form-control" name="lastname" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Firstname</label>
+                <input type="text" class="form-control" name="firstname" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Sex</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" value="Male" required>
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" value="Female">
+                    <label class="form-check-label">Female</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Institution</label>
+                <select class="form-select" name="institution" required>
+                    <option value="">Select Institution</option>
+                    <option value="PSU">PSU</option>
+                    <option value="UCU">UCU</option>
+                    <option value="PNU">PNU</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-4">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
